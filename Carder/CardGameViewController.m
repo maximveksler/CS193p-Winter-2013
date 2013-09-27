@@ -16,15 +16,32 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lastMoveLabel;
 @end
 
 @implementation CardGameViewController
 
+- (CardMatchingGame *) _xGame {
+    return [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count ] usingDeck:[[PlayingCardDeck alloc] init]];
+}
+
+@synthesize game = _game;
+
 - (CardMatchingGame *) game {
     if (!_game) {
-        _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count ] usingDeck:[[PlayingCardDeck alloc] init]];
+        _game = [self _xGame];
     }
     return _game;
+}
+
+- (void) setGame:(CardMatchingGame *)game {
+    _game = game;
+}
+
+- (IBAction)deal {
+    self.game = [self _xGame];
+    self.flipCount = 0;
+    [self updateUI];
 }
 
 - (void)setCardButtons:(NSArray *)cardButtons {
@@ -44,12 +61,13 @@
     }
     
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+    self.lastMoveLabel.text = self.game.lastMove;
 }
 
 - (void)setFlipCount:(int)flipCount {
     _flipCount = flipCount;
     self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
-    NSLog(@"flips updated to %d", self.flipCount);
+//    NSLog(@"flips updated to %d", self.flipCount);
 }
 
 - (IBAction)flipCard:(UIButton *)sender {
@@ -57,5 +75,6 @@
     self.flipCount++;
     [self updateUI];
 }
+
 
 @end

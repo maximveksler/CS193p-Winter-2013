@@ -16,4 +16,5 @@
 - (void)flipCardAtIndex:(NSUInteger)inedx;
 - (Card *)cardAtIndex:(NSUInteger)index;
 @property (nonatomic, readonly) int score;
+@property (nonatomic) NSString *lastMove;
 @end
