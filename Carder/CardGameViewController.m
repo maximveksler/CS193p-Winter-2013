@@ -39,7 +39,7 @@
 }
 
 - (IBAction)deal {
-    self.game = [self _xGame];
+    self.game = nil;
     self.flipCount = 0;
     [self updateUI];
 }
