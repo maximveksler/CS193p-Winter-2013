@@ -23,6 +23,7 @@
 		045C6F4B17EBDB9400371F21 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 045C6F4A17EBDB9400371F21 /* PlayingCard.m */; };
 		045C6F4E17EBF35300371F21 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 045C6F4D17EBF35300371F21 /* PlayingCardDeck.m */; };
 		046869AF17EE1BDE0091A65D /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 046869AE17EE1BDE0091A65D /* CardMatchingGame.m */; };
+		04C6788217F526D400FB28B0 /* ThreeCardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C6788117F526D400FB28B0 /* ThreeCardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		045C6F4D17EBF35300371F21 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 		046869AD17EE1BDE0091A65D /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
 		046869AE17EE1BDE0091A65D /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
+		04C6788017F526D400FB28B0 /* ThreeCardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreeCardMatchingGame.h; path = Model/ThreeCardMatchingGame.h; sourceTree = "<group>"; };
+		04C6788117F526D400FB28B0 /* ThreeCardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThreeCardMatchingGame.m; path = Model/ThreeCardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				045C6F4D17EBF35300371F21 /* PlayingCardDeck.m */,
 				046869AD17EE1BDE0091A65D /* CardMatchingGame.h */,
 				046869AE17EE1BDE0091A65D /* CardMatchingGame.m */,
+				04C6788017F526D400FB28B0 /* ThreeCardMatchingGame.h */,
+				04C6788117F526D400FB28B0 /* ThreeCardMatchingGame.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				045C6F3C17EBB4D200371F21 /* CardGameViewController.m in Sources */,
 				045C6F4417EBB85100371F21 /* Deck.m in Sources */,
 				045C6F4817EBC2DC00371F21 /* Card.m in Sources */,
+				04C6788217F526D400FB28B0 /* ThreeCardMatchingGame.m in Sources */,
 				045C6F4B17EBDB9400371F21 /* PlayingCard.m in Sources */,
 				045C6F4E17EBF35300371F21 /* PlayingCardDeck.m in Sources */,
 				046869AF17EE1BDE0091A65D /* CardMatchingGame.m in Sources */,
